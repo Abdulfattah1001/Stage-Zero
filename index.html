@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG STAGE ZERO</title>
+    <style type="text/css" media="screen">
+        *{
+            color: black;
+            font-style: normal;
+            font-family: monospace;
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 2px;
+            color: red;
+        }
+
+        body{
+            position: relative;
+        }
+
+        section{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 3rem;
+            background-color: black;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-sizing: border-box;
+            color: white;
+        }
+        header span{
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        header nav ul{
+            list-style-type: none;
+        }
+
+
+        #body{
+            position: relative;
+            top: 3rem;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            background-color: rgb(45, 43, 43);
+        }
+
+        li{
+            color: white;
+            text-decoration: none;
+            outline: 1px solid wheat;
+            margin-bottom: 5px;
+            padding:5px;
+            width: 50%;
+            border-radius: 5px;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        li:hover{
+            transition: 1s;
+            background-color: blue;
+            color: white
+        }
+
+        .tag{
+            color: white;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        .desc{
+            font-style: italic;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        a{
+            color: white;
+        }
+
+
+        @media  screen and (max-width: 480px) {
+            li{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <span>HNG STAGE ZERO </span>
+        </header>
+        <div id="body">
+            <div>
+                <ul>
+                    <li>
+                        <span class="tag">Name: </span> <span class="desc">Aminu Fatai</span>
+                    </li>
+                    <li>
+                        <span class="tag">Username: </span> <span class="desc">Abdulfattah</span>
+                    </li>
+                    <li>
+                        <span class="tag">Email: </span> <span class="desc">aminufattah6@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="tag">HNG Internship Program: </span> <span class="desc"><a href="https://hng.tech/internship">HNG Internship Program</a></span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
